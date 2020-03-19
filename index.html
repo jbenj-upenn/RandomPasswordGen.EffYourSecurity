@@ -1,63 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Be Safe Out There!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">drowssaP rotareneG</a>
-    </nav>
- 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-sm-12 mx-auto">
-          <div class="content">
-            
-              <h3>Erator Gen Word Pass</h3>
-              <br />
-              <input type="text" id="display">
-              <br />
-              <input type="range" min="8" max="54" name="range-toucher" id="range-toucher"> 
-              <br />
-              <button onclick="generate()">Generate</button>
-              
-          <div id="length"></div>
-          </div>
-        </div>
-            
-        
-            <div id="lastNums"></div>
-          </div>
-          </div>
-      </div>  
-      </div>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" defer></script> 
+  <title>Randomize that Password</title>
+</head>
+<body>
+  <!-- <nav class="navbar"> -->
+    <!-- <a class="navbar" href="#"><strong>drowssaP rotareneG</strong></a> -->
+  <!-- </nav> -->
 
-  
-      <div class="card">
-        <div class="card-header">
-          <h2>You half nerd, make a Password!</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
+  <div class="container">
+    <h1 class="title">Randomize that Password</h1>
+    <h3 class="password" id="passwordDisplay">Password</h3>
+    
+    <form id="passwordgenerator" class="form">
+      
+      <label for="numberCharacters">Number of Characters?</label>
+   
+    <div class="slider">
+        <input type="range" min="8" max="52" id="characterAmountRange" value="10">
+        <input type="number" class="numBox" min="8" max="52" id="characterAmountNumber" value="10">
+    </div> 
+
+    <div class="upper">
+      <label for="includeUpperCase">Include Uppercase</label>
+      <input type="checkbox" id="includeUpperCase">
     </div>
-    <script src="script.js"></script>
-  </body>
+    
+    <div class="numbers">
+      <label for="includeNumbers">Include Numbers</label>
+      <input type="checkbox" id="includeNumbers">
+    </div>
+    
+    <div class="special">
+      <label for="includeSpecialCharacters">Include Special Characters</label>
+      <input type="checkbox" id="includeSpecialCharacters">
+    </div>
+
+    <div>
+      <button type="submit" class="btn">Generate Password</button>
+    </div>
+  
+  </form>
+  
+  </div>
+  
+</body>
 </html>
