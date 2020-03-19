@@ -49,6 +49,7 @@ label {
 .numBox {
   background-color: whitesmoke;
   align-self: right;
+  width: 97%;
 }
 
 .upper,.numbers,.special{
