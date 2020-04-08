@@ -10,6 +10,8 @@ Downfall:
 1. I can't seem to get the special characters to work. Dev Tools points to line 75, but I still can't figure it out. 
 
 
+After working on this project for at least 15 hours, I finally gave up, having borrowed ideas from a number of tutorials online. Despite getting the password to actually show, it doesn't work the way that the README wants it to. 
+
 
 
 
