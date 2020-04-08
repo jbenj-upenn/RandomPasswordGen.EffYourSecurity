@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js" defer></script>
-  
-  <!--The following script is one that I was working on and does actually function,
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="javascript.js" defer></script>
+    <script src="https://kit.fontawesome.com/f42152e8bd.js" crossorigin="anonymous"></script>
+
+    <!--The following script is one that I was working on and does actually function,
   but I don't think it follows the specifications of the original README for this HW>
   <script src="Javascript.js" defer></script> -->
 
-  <title>Randomize that Password</title>
+    <title>Randomize that Password</title>
 </head>
+
 <body>
-  <!-- <nav class="navbar"> -->
-    <!-- <a class="navbar" href="#"><strong>drowssaP rotareneG</strong></a> -->
-  <!-- </nav> -->
+    <div class="container">
+        <h1>Randomize that Password</h1>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
 
-  <div class="container">
-    <h1 class="title">Randomize that Password</h1>
-    <h3 class="password" id="passwordDisplay">Password</h3>
-    
+        <!-- Following Divs for Password Options -->
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Length of Password?</label>
+                <input type="number" id="length" min="8" max="24" placeholder="8-24">
+            </div>
+            <div class="setting">
+                <label for="upperCase">Include Uppercase?</label>
+                <input type="checkbox" id="upperCase" />
+            </div>
+            <div class="setting">
+                <label for="lowerCase">Include Lowercase?</label>
+                <input type="checkbox" id="lowerCase" />
+            </div>
+            <div class="setting">
+                <label for="numbers">Include Numbers?</label>
+                <input type="checkbox" id="numbers" />
+            </div>
+            <div class="setting">
+                <label for="specialChars">Include Special Characters?</label>
+                <input type="checkbox" id="specialChars" />
+            </div>
+            <button class="btn btn-large" id="generatePassword">Generate Random Password</button>
 
-    <form id="passwordgenerator" class="form">
-      
-      <label for="numberCharacters">Number of Characters?</label>
-   
-    <!--I had to watch a tutorial on how to create a slider, and it worked at first, but as I added
-    more and more JavaScript, I messed it up somehow. I can't figure out how to go back and fix it/
-    I has something to do with syncing the slider and the number box.-->
-    <div class="slider">
-        <input type="number" class="numBox" min="8" max="52" id="characterAmountNumber" value="10">
-    </div> 
-
-    <div class="upper">
-      <label for="includeUpperCase">Include Uppercase</label>
-      <input type="checkbox" id="includeUpperCase">
-    </div>
-    
-    <div class="numbers">
-      <label for="includeNumbers">Include Numbers</label>
-      <input type="checkbox" id="includeNumbers">
-    </div>
-    
-    <div class="special">
-      <label for="includeSpecialCharacters">Include Special Characters</label>
-      <input type="checkbox" id="includeSpecialCharacters">
+        </div>
     </div>
 
-    <div>
-      <button type="submit" class="btn">Generate Password</button>
-    </div>
-  
-  </form>
-  
-  </div>
-  
+
+
+
+
+
 </body>
+
 </html>

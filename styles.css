@@ -18,13 +18,44 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 300px;
 }
+
+h1 {
+  text-align: center;
+}
+
 /*.navbar { 
   background-color: pink;
   flex-direction: column;
 }*/
 
-.form {
+#clipboard {
+  margin-bottom: 20px;
+  background-color: darkred;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  border-radius: 15px;
+}
+
+#length {
+  border-radius: 5px;
+}
+
+.settings {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#generatePassword {
+  margin-top: 20px;
+  background-color: darkred;
+  padding: 15px;
+  color: white;
+  border-radius: 15px;
+}
+
+/* .form {
   display: grid;
   grid-template-columns: auto auto;
   row-gap: 1rem;
@@ -81,4 +112,4 @@ label {
 
 .btn:hover {
   background-color: #FFFFFF33;
-}
+} */
