@@ -19,5 +19,6 @@ My tutor, Meguel Chavez, and classmate, Erik Donovan assisted me greatly. Additi
 2. If the user wants a password that is very long, the result comes out extending beyond either side of the box that it should be contained in. Setting a max-width doesn't seem to do the trick either. 
 
 
-
+### Screenshot
+![functional](https://user-images.githubusercontent.com/59940368/80524636-f1357e00-895d-11ea-930c-2e0718af1f0c.png)
 
