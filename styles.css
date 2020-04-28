@@ -1,12 +1,13 @@
 body {
   background-color: rgb(41, 32, 32);
-  margin: 0;
+  margin-left: 25%;
   color:white;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
 }
 
 .container {
@@ -29,8 +30,26 @@ h1 {
   background-color: pink;
   flex-direction: column;
 }*/
+#result-container {
+    /* postion:absolute; */
+    box-shadow: 10px #333;
+    
+    border:1px solid;
+    overflow: scroll;
+    width:200px;
+    background-color: #000;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    color:white;
+  max-width: 200px;
+}
+/* #result {
+  max-width: 195px;
+} */
 
-#clipboard {
+#clipBoard {
+  position: static;
   margin-bottom: 20px;
   background-color: darkred;
   text-align: center;
