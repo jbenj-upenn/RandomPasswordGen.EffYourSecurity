@@ -51,15 +51,15 @@ clipboardEl.addEventListener('click', () => {
 });
 
 
-function generatePassword(length, upper, lower, number, specialChars) {
+function generatePassword(length, upper, lower, number, symbol) {
 
     let generatedPassword = '';
 
-    const typesCount = upper + lower + number + specialChars;
+    const typesCount = upper + lower + number + symbol;
 
     // console.log('typesCount: ', typesCount);
 
-    const typesArr = [{ upper }, { lower }, { number }, { specialChars }].filter(item => Object.values(item)[0]);
+    const typesArr = [{ upper }, { lower }, { number }, { symbol }].filter(item => Object.values(item)[0]);
 
     // console.log('typesArr: ', typesArr);
     //nothing retrned if no categories are selected
@@ -79,8 +79,6 @@ function generatePassword(length, upper, lower, number, specialChars) {
     const finalPassword = generatedPassword.slice(0, length);
 
     return finalPassword;
-
-
 }
 
 
