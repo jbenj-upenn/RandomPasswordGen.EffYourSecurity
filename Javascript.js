@@ -41,8 +41,12 @@ clipboardEl.addEventListener('click', () => {
     if (!password) {
         return;
     }
+    textarea.style.top = "0";
+    textarea.style.left = "0";
+    textarea.style.position = "fixed";
     textarea.value = password;
     document.body.appendChild(textarea);
+    textarea.focus();
     textarea.select();
     document.execCommand('copy');
     textarea.remove();
