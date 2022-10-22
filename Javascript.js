@@ -17,7 +17,7 @@ const randomChar = {
 
 //Password button click triggers listen event
 generateEl.addEventListener('click', () => {
-    const length = +lengthEl.value;
+    const length = lengthEl.value;
     const includeUpper = upperCaseEl.checked;
     const includeLower = lowerCaseEl.checked;
     const includeNumber = numbersEl.checked;
@@ -41,7 +41,6 @@ clipboardEl.addEventListener('click', () => {
     if (!password) {
         return;
     }
-
     textarea.value = password;
     document.body.appendChild(textarea);
     textarea.select();
@@ -49,7 +48,6 @@ clipboardEl.addEventListener('click', () => {
     textarea.remove();
     alert('Password copied to clipboard!');
 });
-
 
 function generatePassword(length, upper, lower, number, symbol) {
 
