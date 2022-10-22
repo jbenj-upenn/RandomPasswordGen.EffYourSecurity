@@ -37,13 +37,13 @@ h1 {
     border:1px solid;
     overflow: scroll;
     width: 285px;
-    height: 45px;
-    background-color: #000;
+    height: 50px;
+    background-color: rgb(33, 7, 7);
     float: left;
     margin: 5px;
     text-align: center;
     color:white;
-  max-width: 200px;
+  max-width: 380px;
 }
 /* #result {
   max-width: 195px;
@@ -53,6 +53,7 @@ h1 {
   
   position: static;
   margin-bottom: 20px;
+  margin-top: 20px;
   background-color: darkred;
   text-align: center;
   padding: 15px;
